@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Akanksha Omane | Portfolio</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:sans-serif}
+
+body{
+background:linear-gradient(135deg,#1a0026,#32004d,#4b0082);
+color:white;
+overflow-x:hidden;
+}
+
+/* NAVBAR */
+nav{
+display:flex;
+justify-content:space-between;
+padding:20px;
+background:rgba(0,0,0,0.6);
+backdrop-filter:blur(10px);
+position:sticky;
+top:0;
+}
+
+nav a{
+color:white;
+margin:0 10px;
+text-decoration:none;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#ff00ff;
+text-shadow:0 0 10px #ff00ff;
+}
+
+/* HERO */
+.hero{
+display:flex;
+align-items:center;
+justify-content:center;
+min-height:90vh;
+gap:50px;
+flex-wrap:wrap;
+padding:20px;
+}
+
+.hero img{
+width:260px;
+border-radius:20px;
+box-shadow:0 0 40px purple;
+}
+
+.hero-text h1{
+font-size:45px;
+background:linear-gradient(to right,#ff00ff,#00ffff);
+-webkit-background-clip:text;
+color:transparent;
+}
+
+.hero-text p{
+margin:10px 0;
+}
+
+/* BULLETS */
+.bullets{
+margin-top:15px;
+}
+
+.bullets li{
+margin:10px 0;
+list-style:none;
+position:relative;
+padding-left:25px;
+}
+
+.bullets li::before{
+content:"";
+position:absolute;
+left:0;
+top:6px;
+width:12px;
+height:12px;
+border-radius:50%;
+background:linear-gradient(45deg,#ff00ff,#00ffff);
+box-shadow:0 0 10px #ff00ff;
+}
+
+/* CARDS */
+.card{
+background:rgba(255,255,255,0.05);
+padding:25px;
+border-radius:15px;
+margin:20px;
+backdrop-filter:blur(10px);
+box-shadow:0 0 20px rgba(255,0,255,0.3);
+}
+
+/* GRID */
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+padding:20px;
+}
+
+.project{
+padding:20px;
+border-radius:15px;
+background:linear-gradient(135deg,#2a003f,#4b0082);
+box-shadow:0 0 20px purple;
+transition:0.3s;
+}
+
+.project:hover{
+transform:translateY(-10px) scale(1.05);
+}
+
+/* BUTTON */
+.btn{
+display:inline-block;
+margin-top:10px;
+padding:10px 20px;
+background:black;
+color:white;
+text-decoration:none;
+box-shadow:0 0 10px cyan,0 0 40px cyan;
+border-radius:10px;
+}
+
+/* FOOTER */
+footer{
+text-align:center;
+padding:20px;
+opacity:0.7;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+<h2>Akanksha</h2>
+<div>
+<a href="#">Home</a>
+<a href="#about">About</a>
+<a href="#projects">Projects</a>
+<a href="#resume">Resume</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+<img src="assets/photo.jpg">
+
+<div class="hero-text">
+<h1>Akanksha Omane</h1>
+<p>MIT VPU University</p>
+
+<ul class="bullets">
+<li>Creative Web Developer</li>
+<li>Passionate about AI & Technology</li>
+<li>Strong in HTML, CSS & JavaScript</li>
+<li>Building modern UI/UX designs</li>
+</ul>
+
+<a href="#projects" class="btn">View Projects</a>
+</div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="card">
+<h2>About Me</h2>
+<ul class="bullets">
+<li>Engineering student at MIT VPU</li>
+<li>Interested in AI, Web Development & Design</li>
+<li>Quick learner & problem solver</li>
+<li>Strong teamwork and communication skills</li>
+</ul>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="grid">
+<div class="project">AI Project</div>
+<div class="project">Portfolio Website</div>
+<div class="project">Design Thinking</div>
+<div class="project">Future Project</div>
+</section>
+
+<!-- RESUME -->
+<section id="resume" class="card">
+<h2>Resume</h2>
+
+<ul class="bullets">
+<li><b>Name:</b> Akanksha Omane</li>
+<li><b>University:</b> MIT VPU</li>
+<li><b>Skills:</b> HTML, CSS, JavaScript</li>
+<li><b>Projects:</b> Portfolio, AI Project</li>
+<li><b>Goal:</b> Software Developer</li>
+</ul>
+
+<a href="assets/resume.pdf" target="_blank" class="btn">Download Resume</a>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="card">
+<h2>Contact</h2>
+
+<ul class="bullets">
+<li>Email: your@email.com</li>
+<li>GitHub: yourlink</li>
+<li>LinkedIn: yourlink</li>
+</ul>
+</section>
+
+<footer>
+© 2026 Akanksha Omane
+</footer>
+
+</body>
+</html>
